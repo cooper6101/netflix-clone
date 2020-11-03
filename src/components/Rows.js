@@ -1,6 +1,6 @@
-import React, { Fragment } from "react";
-import Row from "./Row";
-import requests from "../requests";
+import React, { Fragment } from 'react';
+import Row from './Row';
+import requests from '../requests';
 
 const Rows = () => {
   const {
@@ -11,23 +11,23 @@ const Rows = () => {
     fetchComedyMovies,
     fetchHorrorMovies,
     fetchRomanceMovies,
-    fetchDocumentaryMovies,
+    fetchDocumentaryMovies
   } = requests;
 
   return (
     <Fragment>
       <Row
-        title="NETFLIX ORIGINALS"
+        title='NETFLIX ORIGINALS'
         fetchUrl={fetchNetflixOriginals}
         isLargeRow
       />
-      <Row title="Trending Now" fetchUrl={fetchTrending} />
-      <Row title="Top Rated" fetchUrl={fetchTopRated} />
-      <Row title="Action" fetchUrl={fetchActionMovies} />
-      <Row title="Horror" fetchUrl={fetchComedyMovies} />
-      <Row title="Horror" fetchUrl={fetchHorrorMovies} />
-      <Row title="Romance" fetchUrl={fetchRomanceMovies} />
-      <Row title="Documentaries" fetchUrl={fetchDocumentaryMovies} />
+      <Row title='Trending Now' fetchUrl={fetchTrending} />
+      <Row title='Top Rated' fetchUrl={fetchTopRated} />
+      <Row title='Action' fetchUrl={fetchActionMovies} />
+      <Row title='Comedy' fetchUrl={fetchComedyMovies} />
+      <Row title='Horror' fetchUrl={fetchHorrorMovies} />
+      <Row title='Romance' fetchUrl={fetchRomanceMovies} />
+      <Row title='Documentaries' fetchUrl={fetchDocumentaryMovies} />
     </Fragment>
   );
 };
